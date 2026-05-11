@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pokédex Pro</title>
+<link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+
+<h1>Pokédex Pro</h1>
+
+<div class="controls">
+    <input type="text" id="search" placeholder="🔍 Buscar Pokémon...">
+    
+    <select id="typeFilter">
+        <option value="">Todos los tipos</option>
+        <option value="fire">🔥 Fuego</option>
+        <option value="water">💧 Agua</option>
+        <option value="grass">🌿 Planta</option>
+        <option value="electric">⚡ Eléctrico</option>
+    </select>
+</div>
+
+<div id="loader">Cargando...</div>
+<div id="pokemonList" class="grid"></div>
+
+<script type="module" src="/JS/main.js"></script>
+
+</body>
+</html>

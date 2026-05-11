@@ -1,0 +1,151 @@
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    background: #1e1e1e;
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== TITULO CENTRADO ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* ===== CONTROLES (BUSCADOR BONITO) ===== */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* INPUT Y SELECT */
+#search, #typeFilter {
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #2c2c2c;
+    color: white;
+    font-size: 14px;
+    min-width: 200px;
+    transition: 0.3s;
+}
+
+/* EFECTO FOCUS */
+#search:focus, #typeFilter:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+/* ===== GRID ORDENADO ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* ===== TARJETA ===== */
+.flip-card {
+    width: 180px;
+    height: 260px;
+    perspective: 1000px;
+    transition: transform 0.3s;
+}
+
+/* HOVER GENERAL */
+.flip-card:hover {
+    transform: translateY(-8px);
+}
+
+/* CONTENIDO */
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+/* ===== CARAS ===== */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    padding: 12px;
+    backface-visibility: hidden;
+}
+
+/* FRONT */
+.front {
+    background: linear-gradient(135deg, #e0e0e0, #cfcfcf);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* BACK */
+.back {
+    background: #2c2c2c;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* IMAGEN */
+.front img {
+    width: 110px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.flip-card:hover img {
+    transform: scale(1.1);
+}
+
+/* HEADER */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.hp {
+    color: red;
+}
+
+/* TIPOS */
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.types span {
+    background: #888;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+}

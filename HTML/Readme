@@ -1,0 +1,92 @@
+# Pokédex Pro
+
+##  Descripción
+
+Pokédex Pro es una aplicación web interactiva inspirada en la Pokédex de Pokémon. El proyecto permite visualizar tarjetas dinámicas de Pokémon con efectos, tiene la opcion de búsqueda y filtrado por tipos.
+
+El diseño está enfocado en una apariencia futurista y elegante utilizando tonos grises, animaciones suaves y tarjetas con efecto tipo 3D.
+
+---
+
+#  Características
+
+*  Buscador de Pokémon en tiempo real
+*  Tarjetas con efecto flip 3D
+*  Animaciones glow y brillo holográfico
+*  Diseño responsive adaptable a diferentes pantallas
+*  Filtrado por tipos de Pokémon
+*  Imágenes grandes con efecto zoom
+*  Interfaz moderna con fondo oscuro
+*  Paleta de colores minimalista en tonos grises
+
+---
+
+#  Tecnologías utilizadas
+
+* HTML5
+* CSS3
+* JavaScript
+* PokéAPI
+
+---
+
+#  Estructura del proyecto
+
+```bash
+Pokedex-Pro/
+│
+├── index.html
+├── styles.css
+├── api.js
+├── main.js
+└── README.md
+```
+
+---
+
+#  Funcionamiento
+
+La aplicación obtiene información desde la PokéAPI y genera automáticamente tarjetas dinámicas de Pokémon.
+
+Cada tarjeta incluye:
+
+* Nombre
+* Imagen
+* HP
+* Tipos
+* Información adicional
+* Animaciones visuales
+
+Al hacer clic sobre una tarjeta, esta gira mostrando información adicional del Pokémon.
+
+---
+
+#  Diseño visual
+
+El proyecto utiliza:
+
+* Fondo gris oscuro moderno
+* Tarjetas minimalistas
+* Glow animado
+* Sombras suaves
+* Efectos hover
+* Animaciones de transición fluidas
+
+---
+
+#  Responsive Design
+
+Pokédex Pro está optimizado para:
+
+*  Computadoras
+*  Teléfonos móviles
+*  Tablets
+
+Las tarjetas se acomodan automáticamente usando CSS Grid.
+
+---
+
+#  Autor
+
+Proyecto desarrollado por Pablo López Monzón.
+
